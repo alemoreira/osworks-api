@@ -7,5 +7,41 @@ Accept: application/json
 ###
 
 GET http://localhost:8080/clientes
+
+###
+
+//GET http://localhost:8080/clientes/1
+GET http://localhost:8080/clientes/12
+
+###
+
+POST http://localhost:8080/clientes
 Content-Type: application/json
 Accept: application/json
+
+{
+  "nome":"Fernando",
+  "email":"fernando@mail.com",
+  "telefone":"34987456352"
+}
+
+###
+
+PUT http://localhost:8080/clientes/{id}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome":"Maria",
+  "email":"maria@mail.com",
+  "telefone":"34987456352"
+}
+
+###
+
+DELETE http://localhost:8080/clientes/2
+
+###
+
+GET http://localhost:8080/buscarPorNome
+
