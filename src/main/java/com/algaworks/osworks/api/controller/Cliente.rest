@@ -1,10 +1,4 @@
-# OSWorks API
-
-GET http://localhost:8080/foos
-Content-Type: application/json
-Accept: application/json
-
-###
+# OSWorks API - Cliente
 
 GET http://localhost:8080/clientes
 

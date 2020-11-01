@@ -1,0 +1,5 @@
+# OSWorks API - Foo
+
+GET http://localhost:8080/foos
+Content-Type: application/json
+Accept: application/json

@@ -1,0 +1,57 @@
+# OSWorks API - Ordem de Serviços
+
+# Listar
+GET http://localhost:8080/ordens-servico
+
+###
+
+# Adicionar
+POST http://localhost:8080/ordens-servico
+Content-Type: application/json
+Accept: application/json
+
+{
+  "cliente": {
+    "id": 2
+  },
+  "descricao": "Reparo de notebook. Cliente diz que não liga.",
+  "preco": 300.50
+}
+
+###
+
+//GET http://localhost:8080/clientes/1
+GET http://localhost:8080/clientes/12
+
+###
+
+POST http://localhost:8080/clientes
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome":"Fernando",
+  "email":"fernando@mail.com",
+  "telefone":"34987456352"
+}
+
+###
+
+PUT http://localhost:8080/clientes/{id}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome":"Maria",
+  "email":"maria@mail.com",
+  "telefone":"34987456352"
+}
+
+###
+
+DELETE http://localhost:8080/clientes/2
+
+###
+
+GET http://localhost:8080/buscarPorNome
+
