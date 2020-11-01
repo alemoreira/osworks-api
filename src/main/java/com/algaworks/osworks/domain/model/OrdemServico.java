@@ -27,7 +27,7 @@ public class OrdemServico {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @Valid
+  // @Valid
   @NotNull
   @ManyToOne
   // @JoinColumn(name = "cliente_id")
